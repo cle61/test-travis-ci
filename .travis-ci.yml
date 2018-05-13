@@ -1,0 +1,13 @@
+os:
+  - linux
+  - osx
+  
+language: node_js
+
+before_install:
+  - npm install -g npm@5.8.x
+
+script:
+  - npm install nativefier -g
+  - nativefier --name "Some Awesome App" "http://medium.com"
+  - ls -lisa
