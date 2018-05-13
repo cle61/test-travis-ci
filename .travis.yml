@@ -3,11 +3,13 @@ os:
   - osx
   
 language: node_js
+node_js:
+  - "iojs"
+  - "7"
 
 before_install:
-  - npm install -g npm@5.8.x
+  - npm install nativefier -g
 
 script:
-  - npm install nativefier -g
   - nativefier --name "Some Awesome App" "http://medium.com"
   - ls -lisa
