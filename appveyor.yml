@@ -10,6 +10,6 @@ test_script:
   - node --version
   - npm --version
 
-build:
+test_script:
   - nativefier --name "Some Awesome App" "http://medium.com"
   - ls -lisa
