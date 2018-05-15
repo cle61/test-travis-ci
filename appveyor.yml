@@ -3,8 +3,7 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install
-  - npm install nativefier -g
+  - cmd: npm install nativefier -g
 
 test_script:
   - node --version
